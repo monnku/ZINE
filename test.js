@@ -2,7 +2,7 @@ function main() {
 const code_el = document.getElementsByClassName('code')[0];
 const username = "monnku";
 
-code_el.innerHTML = `
+code_el.textContent = `
 const username = "monnku"; //ここではmonnku.
 fetch("https://api.scratch.mit.edu/users/"+username+"/messages/count")
     .then(r => r.json())
@@ -19,6 +19,6 @@ fetch(`https://api.scratch.mit.edu/users/${username}/messages/count`)
     }
 );
 const result_el = document.getElementsByClassName('result')[0];
-result_el.innerHTML = `>> ${String(count)}`;
+result_el.textContent = `>> ${String(count)}`;
 }
 window.onload = main;
