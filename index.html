@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hogehoge</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --panel: #161b22;
+      --text: #c9d1d9;
+      --muted: #8b949e;
+      --accent: #58a6ff;
+      --border: #30363d;
+      --code-bg: #010409;
+      --code-text: #e6edf3;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "JetBrains Mono", "Fira Code", "Consolas", monospace;
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 24px 32px;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, #0d1117, #0b0f14);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.6rem;
+      color: var(--accent);
+    }
+
+    header p {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px;
+    }
+
+    article {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 32px;
+    }
+
+    article h2 {
+      margin-top: 48px;
+      margin-bottom: 12px;
+      font-size: 1.3rem;
+      color: var(--accent);
+      border-left: 4px solid var(--accent);
+      padding-left: 12px;
+    }
+
+    article h2:first-of-type {
+      margin-top: 0;
+    }
+
+    article p {
+      margin: 12px 0;
+    }
+
+    .note {
+      background: rgba(88, 166, 255, 0.08);
+      border-left: 4px solid var(--accent);
+      padding: 12px 16px;
+      margin: 20px 0;
+      color: var(--text);
+    }
+
+    pre {
+      background: var(--code-bg);
+      color: var(--code-text);
+      padding: 16px;
+      border-radius: 6px;
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      margin: 20px 0;
+      font-size: 0.9rem;
+    }
+
+    code {
+      background: rgba(110, 118, 129, 0.2);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+
+    pre code {
+      background: none;
+      padding: 0;
+      border-radius: 0;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 16px;
+      border-top: 1px dashed var(--border);
+      color: var(--muted);
+      font-size: 0.8rem;
+      text-align: right;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 16px;
+      }
+
+      article {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>&gt; hogehoge</h1>
+    <p>// httpリクエストのテスト用webサイト.</p>
+  </header>
+
+  <main>
+    <article>
+      <h2>Overview</h2>
+      <p>
+        httpリクエストを試すためのwebサイト.
+      </p>
+
+      <div class="note">
+        NOTE: scratchAPIにたたく.
+      </div>
+
+      <h2>Code</h2>
+      <p>以下実行コード.</p>
+
+      <pre><code class="code"></code></pre>
+      <footer>
+        // written by you
+      </footer>
+    </article>
+  </main>
+</body>
+</html>
