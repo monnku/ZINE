@@ -1,5 +1,7 @@
+function main() {
 const code_el = document.getElementsByClassName('code')[0];
 const username = "monnku";
+
 code_el.innerHTML = `
 const username = "monnku"; //ここではmonnku.
 fetch("https://api.scratch.mit.edu/users/"+username+"/messages/count")
@@ -18,3 +20,5 @@ fetch(`https://api.scratch.mit.edu/users/${username}/messages/count`)
 );
 const result_el = document.getElementsByClassName('result')[0];
 result_el.innerHTML = `>> ${String(count)}`;
+}
+window.onload = main;
